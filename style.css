@@ -38,16 +38,29 @@ section:nth-child(even) {
     background-color: #f4f9f9;
 }
 
+.panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .panel1 {
     background-color: #f875aa;
-    flex: 1 1 100px;
-    padding: 16px;
+    flex: 1 1 min-content;
 }
 
 .panel2 {
+    flex: 1 1 0;
     background-color: white;
-    flex: 1 1 100px;
     padding: 16px;
+}
+
+.circle {
+    width: 40vh;
+    height: 40vh;
+    background-color: green;
+    border-radius: 50%;
 }
 
 p {
