@@ -44,22 +44,21 @@ section:nth-child(even) {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex: 1 1 0;
 }
 
 .panel1 {
     background-color: #f875aa;
-    flex: 1 1 0;
 }
 
 .panel2 {
-    flex: 1 1 0;
     background-color: white;
     padding: 16px;
 }
 
 .circle {
-    width: calc(50vh - (var(--header-mob-height)));
-    height: calc(50vh - (var(--header-mob-height)));
+    width: calc(50vh - (var(--header-mob-height)) - (var(--btn-container-height) / 2));
+    height: calc(50vh - (var(--header-mob-height)) - (var(--btn-container-height) / 2));
     background-color: white;
     border-radius: 50%;
 }
