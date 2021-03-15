@@ -6,11 +6,12 @@
 html,
 body {
     height: 100%;
+    --header-mob-height: 100px;
 }
 
 header {
-    height: 100px;
-    background-color: #f875aa;
+    height: var(--header-mob-height);
+    background-color: white;
     position: fixed;
     width: 100%;
     margin-top: -100px;
@@ -22,8 +23,7 @@ header {
 section {
     display: flex;
     flex-direction: column;
-    min-height: calc(100% - 100px);
-    padding: 16px;
+    min-height: calc(100% - var(--header-mob-height));
 }
 
 section:first-of-type {
@@ -38,10 +38,21 @@ section:nth-child(even) {
     background-color: #f4f9f9;
 }
 
+.panel1 {
+    background-color: #f875aa;
+    flex: 1 1 100px;
+    padding: 16px;
+}
+
+.panel2 {
+    background-color: white;
+    flex: 1 1 100px;
+    padding: 16px;
+}
+
 p {
     margin-bottom: 16px;
 }
-
 
 .btn-container {
     background-color: #fbaccc;
@@ -51,7 +62,4 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: -16px;
-    margin-right: -16px;
-    margin-bottom: -16px;
 }
