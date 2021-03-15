@@ -59,7 +59,7 @@ section:nth-child(even) {
 .circle {
     width: 30vh;
     height: 30vh;
-    background-color: green;
+    background-color: white;
     border-radius: 50%;
 }
 
