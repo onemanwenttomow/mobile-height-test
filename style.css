@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+header {
+    height: 100px;
+    background-color: #f875aa;
+    position: fixed;
+    width: 100%;
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100% - 100px);
+    padding: 16px;
+}
+
+section:first-of-type {
+    margin-top: 100px;
+}
+
+section:nth-child(odd) {
+    background-color: #f1d1d0;
+}
+
+section:nth-child(even) {
+    background-color: #f4f9f9;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+
+.btn-container {
+    background-color: #fbaccc;
+    padding: 8px;
+    margin-top: auto;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -16px;
+    margin-right: -16px;
+    margin-bottom: -16px;
+}
